@@ -12,7 +12,7 @@ title                    : "Phong Nguyen-Thuan Do"
 title_separator          : "-"
 name                     : &name "Phong Nguyen-Thuan Do"
 description              : &description "Researcher at NLP@UIT"
-url                      : https://PhongNTDo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://PhongNTDo.github.io/phongdnt # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "PhongNTDo/phongdnt"
 
@@ -43,7 +43,7 @@ author:
   # bitbucket        : # Username - Update with your username on the site
   # codepen          : # Username
   # dribbble         : # Username
-  github           : "PhongNTDo"
+  github             : "PhongNTDo"
   # kaggle           : # Username  
   # stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

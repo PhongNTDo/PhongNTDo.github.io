@@ -12,9 +12,9 @@ title                    : "Phong Nguyen-Thuan Do"
 title_separator          : "-"
 name                     : &name "Phong Nguyen-Thuan Do"
 description              : &description "Researcher at NLP@UIT"
-url                      : https://PhongNTDo.github.io/phongdnt # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://phongdnt.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "PhongNTDo/phongdnt"
+repository               : "PhongNTDo/phongdnt.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -25,7 +25,7 @@ author:
   name             : "Phong Nguyen-Thuan Do"
   pronouns         : # example: "she/her"  
   bio              : "AI Researcher"
-  location         : "UIT, Ho Chi Minh city, Vietnam"
+  location         : "Ho Chi Minh city, Vietnam"
   employer         : "NLP@UIT"
   # uri              : # URL
   email            : "phongdntvn@gmail.com" 

@@ -3,7 +3,7 @@ title: "ViReader: A Wikipedia-based Vietnamese reading comprehension system usin
 collection: publications
 category: manuscripts
 permalink: /publication/vireader-a-wikipedia-based-vietnamese-reading-comprehension-system-using-transfer-learning
-excerpt: 'Kiet Van Nguyen, Nhat Duy Nguyen, **Phong Nguyen-Thuan Do**, Anh Gia-Tuan Nguyen, Ngan Luu-Thuy Nguyen. Published at Journal of Intelligent and Fuzzy Systems, 2021'
+excerpt: 'Kiet Van Nguyen, Nhat Duy Nguyen, **Phong Nguyen-Thuan Do**, Anh Gia-Tuan Nguyen, Ngan Luu-Thuy Nguyen. Published at Journal of Intelligent and Fuzzy Systems, 2021. [Paper](https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs210683)'
 date: 2021-08-11
 paperurl: 'https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs210683'
 ---

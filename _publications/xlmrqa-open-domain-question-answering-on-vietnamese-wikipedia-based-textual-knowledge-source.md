@@ -1,0 +1,10 @@
+---
+title: "XLMRQA: Open-Domain Question Answering on Vietnamese Wikipedia-Based Textual Knowledge Source"
+collection: publications
+category: conferences
+permalink: /publication/xlmrqa-open-domain-question-answering-on-vietnamese-wikipedia-based-textual-knowledge-source
+excerpt: 'Kiet Van Nguyen, **Phong Nguyen-Thuan Do**, Nhat Duy Nguyen, Tin Van Huynh, Anh Gia-Tuan Nguyen, Ngan Luu-Thuy Nguyen. Publish at **ACIIDS 2022** [Paper](https://arxiv.org/abs/2204.07002)'
+date: 2022-12-09
+paperurl: 'https://arxiv.org/abs/2204.07002'
+---
+Question answering (QA) is a natural language understanding task within the fields of information retrieval and information extraction that has attracted much attention from the computational linguistics and artificial intelligence research community in recent years because of the strong development of machine reading comprehension-based models. A reader-based QA system is a high-level search engine that can find correct answers to queries or questions in open-domain or domain-specific texts using machine reading comprehension (MRC) techniques. The majority of advancements in data resources and machine-learning approaches in the MRC and QA systems especially are developed significantly in two resource-rich languages such as English and Chinese. A low-resource language like Vietnamese has witnessed a scarcity of research on QA systems. This paper presents XLMRQA, the first Vietnamese QA system using a supervised transformer-based reader on the Wikipedia-based textual knowledge source (using the UIT-ViQuAD corpus), outperforming the two robust QA systems using deep neural network models: DrQA and BERTserini with 24.46% and 6.28%, respectively. From the results obtained on the three systems, we analyze the influence of question types on the performance of the QA systems.

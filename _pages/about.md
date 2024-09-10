@@ -10,42 +10,23 @@ redirect_from:
 
 Welcome! I am an ***AI Researcher at Zalo AI & UIT@NLP*** at Ho Chi Minh city, Vietnam. I have been a researcher at [UIT@NLP lab](https://nlp.uit.edu.vn/home) during my undergraduate degree at [University of Information Technology](https://www.uit.edu.vn/). After receiving my bachelor's degree in computer science, I have continued to do part-time research at this lab until now. In parallel, I have worked as an AI researcher at [Zalo AI](https://zalo.ai/), Vietnam for two years.
 
-
+Currently, I am also looking for an opportunity for a PhD position in the field of AI and NLP, especially Large Language Model.
 
 
 Research Interests
 ======
-My researches center on building a perfect question-aswering system which have a ability to reponse any queries of user.
+My research centers on developing a robust question-answering system capable of effectively processing and understanding various forms of unstructured data, including text, images, audio, tables, and code. Through deep-learning techniques and advanced reasoning capabilities, I aim to create a system that can provide comprehensive and accurate responses to a wide range of user queries.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+- **Multimodel Integration**: my research explores the integration of large language models (LLMs) with multimodal processing to leverage the strengths of both approaches. By combining the contextual understanding of LLMs with specialized agents designed for image, table, and chart analysis, I seek to enhance the system's ability to reason and provide informative responses.
 
-Site-wide configuration
+- **Retrieval & Large Language Model**: I am investigating retrieval-augmented generation techniques to improve the factual accuracy and coherence of the system's outputs. By incorporating relevant information from external sources, I aim to minimize hallucinations and ensure that the system's responses are grounded in evidence.
+
+<span style="color:red">*I am happy to chat and discuss potential collaborations. Please feel free to reach out to me via Email (phongdntvn@gmail.com).*</span>
+
+
+News
 ------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+**June 19, 2024:**
+- Phong Do published a new research paper titled "VLUE: A New Benchmark and Multi-task Knowledge Transfer Learning for Vietnamese Natural Language Understanding" at NAACL 2024 (Findings).
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
 
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.

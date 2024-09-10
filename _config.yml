@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Phong Nguyen-Thuan Do"
 title_separator          : "-"
 name                     : &name "Phong Nguyen-Thuan Do"
-description              : &description "Researcher at NLP@UIT"
+description              : &description "Researcher at UIT@NLP"
 url                      : https://PhongNTDo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "PhongNTDo/PhongNTDo.github.io"
@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "AI Researcher"
   location         : "Ho Chi Minh city, Vietnam"
-  employer         : "Zalo AI & NLP@UIT Lab"
+  employer         : "Zalo AI & UIT@NLP Lab"
   # uri              : # URL
   email            : "phongdntvn@gmail.com" 
 

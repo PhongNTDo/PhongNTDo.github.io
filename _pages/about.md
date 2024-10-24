@@ -15,11 +15,11 @@ Currently, I am also looking for an opportunity for a PhD position in the field 
 
 Research Interests
 ======
-My research centers on developing a robust question-answering system capable of effectively processing and understanding various forms of unstructured data, including text, images, audio, tables, and code. Through deep-learning techniques and advanced reasoning capabilities, I aim to create a system that can provide comprehensive and accurate responses to a wide range of user queries.
+I believe retrievers still play a significant role in the current era of AI development, especially the strong growth of generative AI. Retrievers are the way for models to access the most realistic, accurate, and recent data sources. My two favorite research directions right now are two problems revolving around information retrieval.
 
-- **Multimodel Integration**: my research explores the integration of large language models (LLMs) with multimodal processing to leverage the strengths of both approaches. By combining the contextual understanding of LLMs with specialized agents designed for image, table, and chart analysis, I seek to enhance the system's ability to reason and provide informative responses.
+- **How to reason effectively during retrieval?** This question drives my research interests, particularly in exploring how to organize diverse data forms—such as text, images, audio, and code—to enable more effective reasoning processes for identifying the most relevant evidence for a query. For me, the Knowledge graph is a promising approach to handling the above task because of its structure. My goal is to integrate advanced reasoning mechanisms into this structure to represent and reason on it to find the evidence effectively and accurately.
 
-- **Retrieval & Large Language Model**: I am investigating retrieval-augmented generation techniques to improve the factual accuracy and coherence of the system's outputs. By incorporating relevant information from external sources, I aim to minimize hallucinations and ensure that the system's responses are grounded in evidence.
+- **How to represent multilingual multimodal data through embedding?** How can multilingual and multimodal data be effectively represented through embeddings? My goal is to develop methods that enable such representation, as current embedding models are often limited to specific data domains or languages without effectively bridging different aspects. I also see great potential in applying these methods to knowledge graphs, which could enhance the integration and retrieval of complex information. 
 
 <span style="color:red">*I am happy to chat and discuss potential collaborations. Please feel free to reach out to me via Email (phongdntvn@gmail.com).*</span>
 

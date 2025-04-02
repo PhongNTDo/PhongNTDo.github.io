@@ -1,0 +1,18 @@
+# _data/experience.yml
+- date: "2022 - Present"
+  title: "AI Researcher"
+  company: "Zalo AI & UIT@NLP Lab"
+  supervisor: "Dr. ABC"
+  description: "Working on NLP research, focusing on large language models and their applications."
+
+- date: "2020 - 2022"
+  title: "Research Assistant"
+  company: "XYZ University"
+  supervisor: "Prof. DEF"
+  description: "Assisted in research projects related to computer vision and machine learning."
+
+- date: "2019 - 2020"
+  title: "Intern"
+  company: "Tech Company"
+  supervisor: "Mr. GHI"
+  description: "Gained experience in software development and data analysis."

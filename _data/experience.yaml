@@ -1,18 +1,25 @@
-# _data/experience.yml
+# _data/experience.yaml
 - date: "2022 - Present"
-  title: "AI Researcher"
-  company: "Zalo AI & UIT@NLP Lab"
-  supervisor: "Dr. ABC"
-  description: "Working on NLP research, focusing on large language models and their applications."
+  title: "AI Engineer"
+  company: "Zalo AI"
+  supervisor: "Mr. Trang Truong"
+  description: >-
+    Developing and deploying speech processing models, including Voice Activity Detection (VAD) and Automatic Speech Recognition (ASR), for real-world applications.
+    Contributing to the development of Kiki Assistant by integrating and optimizing these models.
 
-- date: "2020 - 2022"
+- date: "2022 - Present"
   title: "Research Assistant"
-  company: "XYZ University"
-  supervisor: "Prof. DEF"
-  description: "Assisted in research projects related to computer vision and machine learning."
+  company: "UIT Natural Language Processing Group"
+  supervisor: "Dr. Kiet Van Nguyen & Prof. Ngan Luu-Thuy Nguyen"
+  description: >-
+    Conducting research in Natural Language Processing (NLP), focusing on machine reading comprehension, question-answering (QA) systems, and language models.
+    Contributed to the publication of eight scientific papers at top-tier conferences (e.g., EACL, NAACL).
+    Developed and released state-of-the-art (SOTA) models, including ViQAS (Vietnamese QA) and CafeBERT (language model).
 
-- date: "2019 - 2020"
-  title: "Intern"
-  company: "Tech Company"
-  supervisor: "Mr. GHI"
-  description: "Gained experience in software development and data analysis."
+- date: "2018 - 2021"
+  title: "Student"
+  company: "University of Information Technology, Vietnam National University, Ho Chi Minh City"
+  supervisor: "Dr. Kiet Van Nguyen & Prof. Ngan Luu-Thuy Nguyen"
+  description: >-
+    Completed a Bachelor's degree in Computer Science with a focus on Natural Language Processing (NLP).
+    Engaged in research activities within the field of NLP.

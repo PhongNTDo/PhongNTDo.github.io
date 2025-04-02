@@ -29,6 +29,7 @@ author_profile: true
     width: 100%;
     margin: 0 auto;
     padding: 20px 0;
+    margin-left: 25%; /* Add a left margin to push the timeline away from the sidebar */
   }
 
   .experience-item {
@@ -75,5 +76,14 @@ author_profile: true
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    #experience-timeline {
+      margin-left: 0; /* Remove the left margin on smaller screens */
+    }
+    .experience-date {
+        left: -100px;
+    }
   }
 </style>

@@ -32,6 +32,6 @@ I believe retrievers still play a significant role in the current era of AI deve
 </details>
 
 <details>
-  <summary><strong>📄 June 19, 2024 — My paper published at NAACL 2024 (Findings)<strong></summary>
+  <summary><strong>📄 June 19, 2024 — My paper published at NAACL 2024 (Findings)</strong></summary>
   <p>Our new paper at the UIT NLP Group with the title <em>"VLUE: A New Benchmark and Multi-task Knowledge Transfer Learning for Vietnamese Natural Language Understanding"</em> has been published at <strong>NAACL 2024</strong>.</p>
 </details>

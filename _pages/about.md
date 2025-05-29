@@ -27,6 +27,9 @@ I believe retrievers still play a significant role in the current era of AI deve
 News
 ------
 **June 19, 2024:**
+- Our paper "VMLU Benchmarks: A comprehensive benchmark toolkit for Vietnamese LLMs" has been accepted to ACL 2025 (Main conference).
+
+**June 19, 2024:**
 - Phong Do published a new research paper titled "VLUE: A New Benchmark and Multi-task Knowledge Transfer Learning for Vietnamese Natural Language Understanding" at NAACL 2024 (Findings).
 
 

@@ -23,13 +23,15 @@ I believe retrievers still play a significant role in the current era of AI deve
 
 <span style="color:red">*I am happy to chat and discuss potential collaborations. Please feel free to reach out to me via Email (phongdntvn@gmail.com).*</span>
 
-
-News
+## 📰 News
 ------
-**June 19, 2024:**
-- Our paper "VMLU Benchmarks: A comprehensive benchmark toolkit for Vietnamese LLMs" has been accepted to ACL 2025 (Main conference).
 
-**June 19, 2024:**
-- Phong Do published a new research paper titled "VLUE: A New Benchmark and Multi-task Knowledge Transfer Learning for Vietnamese Natural Language Understanding" at NAACL 2024 (Findings).
+<details>
+  <summary><strong>📄 May 16, 2025 — A paper accepted to ACL 2025 (Main)</strong></summary>
+  <p>Our new paper at Zalo with the title <em>"VMLU Benchmarks: A comprehensive benchmark toolkit for Vietnamese LLMs"</em> has been accepted at <strong>ACL 2025</strong>.</p>
+</details>
 
-
+<details>
+  <summary><strong>📄 June 19, 2024 — My paper published at NAACL 2024 (Findings)<strong></summary>
+  <p>Our new paper at the UIT NLP Group with the title <em>"VLUE: A New Benchmark and Multi-task Knowledge Transfer Learning for Vietnamese Natural Language Understanding"</em> has been published at <strong>NAACL 2024</strong>.</p>
+</details>

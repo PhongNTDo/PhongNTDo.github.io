@@ -1,4 +1,24 @@
 <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
+<!-- <a href="/sitemap/">Sitemap</a> -->
 <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=b6b6b6&w=a&t=n&d=u6RS0kAk7RgZqBry-cw3hdtfOFTzFdcjmvolu67beA0&co=ffffff&cmo=00ff01&cmn=cdb094&ct=000000'></script> -->
+<!-- Container for the ClustrMaps Globe -->
+<div class="clustrmaps-container">
+    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=u6RS0kAk7RgZqBry-cw3hdtfOFTzFdcjmvolu67beA0"></script>
+  </div>
+  
+  <!-- CSS to Resize the Globe -->
+  <style>
+    .clustrmaps-container {
+      width: 150px; /* Set desired width */
+      height: 150px; /* Set desired height */
+      overflow: hidden; /* Hide overflow if any */
+      position: relative;
+    }
+  
+    .clustrmaps-container canvas {
+      transform: scale(0.5); /* Adjust scale as needed */
+      transform-origin: top left;
+    }
+  </style>
+  
 <!-- end custom footer snippets -->

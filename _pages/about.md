@@ -8,18 +8,23 @@ redirect_from:
 ---
 
 
-Welcome! I am an ***AI Researcher at Zalo AI & UIT@NLP*** at Ho Chi Minh city, Vietnam. I have been a researcher at [UIT@NLP lab](https://nlp.uit.edu.vn/home) during my undergraduate degree at [University of Information Technology](https://www.uit.edu.vn/). After receiving my bachelor's degree in computer science, I have continued to do part-time research at this lab until now. In parallel, I have worked as an AI researcher at [Zalo AI](https://zalo.ai/), Vietnam for two years.
-
-Currently, I am also looking for an opportunity for a PhD position in the field of AI and NLP, especially Large Language Model.
+Welcome! I am an ***AI Researcher at Zalo AI & UIT@NLP*** at Ho Chi Minh city, Vietnam. I have been a researcher at [UIT@NLP lab](https://nlp.uit.edu.vn/home) during my undergraduate degree at [University of Information Technology](https://www.uit.edu.vn/). After receiving my bachelor's degree in computer science, I have continued to do part-time research at this lab until now. In parallel, I have worked as an AI researcher at [Zalo AI](https://zalo.ai/), Vietnam for 3+ years.
 
 
 Research Interests
 ======
-I believe retrievers still play a significant role in the current era of AI development, especially the strong growth of generative AI. Retrievers are the way for models to access the most realistic, accurate, and recent data sources. My two favorite research directions right now are two problems revolving around information retrieval.
+I’m passionate about building intelligent retrieval systems that can reason, generalize across modalities and languages, and interact with structured knowledge. My research focuses on two major directions: enhancing Retrieval-Augmented Generation (RAG), and exploring the intersection between Artificial Intelligence and Geography.
 
-- **How to reason effectively during retrieval?** This question drives my research interests, particularly in exploring how to organize diverse data forms—such as text, images, audio, and code—to enable more effective reasoning processes for identifying the most relevant evidence for a query. For me, the Knowledge graph is a promising approach to handling the above task because of its structure. My goal is to integrate advanced reasoning mechanisms into this structure to represent and reason on it to find the evidence effectively and accurately.
+- **🔍 Retrieval-Augmented Generation:** I'm interested in advancing RAG systems to make retrieval more intelligent, interpretable, and adaptable to complex data types.
 
-- **How to represent multilingual multimodal data through embedding?** How can multilingual and multimodal data be effectively represented through embeddings? My goal is to develop methods that enable such representation, as current embedding models are often limited to specific data domains or languages without effectively bridging different aspects. I also see great potential in applying these methods to knowledge graphs, which could enhance the integration and retrieval of complex information. 
+  - **📘 Knowledge Graph Reasoning:** Leveraging structured knowledge graphs to support logical reasoning and evidence chaining during retrieval.
+
+  - **🌐 Multilingual & Multimodal Embedding:** Designing unified embedding spaces for cross-language and cross-modal semantic search - enabling systems to search across text, images, and more.
+
+
+- **🗺️ AI and Geography:** As a geography enthusiast, exploring the intersection between spatial intelligence and artificial intelligence.
+
+  - **🧭 Spatial RAG & Geographic Question Answering:** Developing systems that understand and retrieve geospatial information, enabling models to answer geography-based questions and reason over maps, locations, and spatial relationships.
 
 <span style="color:red">*I am happy to chat and discuss potential collaborations. Please feel free to reach out to me via Email (phongdntvn@gmail.com).*</span>
 

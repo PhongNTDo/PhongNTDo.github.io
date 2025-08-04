@@ -502,3 +502,21 @@ a.reversefootnote {
   color: $danger-color;
   font-weight: bold;
 }
+
+/*
+   Custom publication list styles
+   ========================================================================== */
+
+.publications-list {
+  .archive__item p,
+  .archive__item li,
+  .archive__item .page__meta,
+  .archive__item .archive__item-excerpt {
+    font-size: 0.9rem; /* Smaller font size */
+    line-height: 1.0; /* Shorter line height */
+  }
+
+  .archive__item-title {
+    font-size: 1.0rem; /* Slightly smaller title */
+  }
+}

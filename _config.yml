@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Phong Nguyen-Thuan Do"
+title                    : "Phong (Felix) Do"
 title_separator          : "-"
-name                     : &name "Phong Nguyen-Thuan Do"
-description              : &description "Researcher at UIT@NLP"
+name                     : &name "Phong (Felix) Do"
+description              : &description "AI Researcher"
 url                      : https://PhongNTDo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "PhongNTDo/PhongNTDo.github.io"
@@ -22,9 +22,10 @@ repository               : "PhongNTDo/PhongNTDo.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Phong Nguyen-Thuan Do"
+  name             : "Phong (Felix) Do"
   pronouns         : # example: "she/her"  
-  bio              : "AI Researcher"
+  bio              : "AI Researcher | Geography Enthusiast | Storyteller in Code and Coordinates"
+  describe         : "Where language meets landscape"
   location         : "Ho Chi Minh city, Vietnam"
   employer         : "Zalo AI & UIT@NLP Lab"
   # uri              : # URL

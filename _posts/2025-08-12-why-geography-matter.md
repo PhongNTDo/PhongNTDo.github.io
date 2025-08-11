@@ -162,4 +162,4 @@ So, buckle up! This is just the first step, and I can’t wait to explore with y
 ### What should we explore next? 🚀
 Got a Artificial Intelligence, Geography, or GeoAI topic you’re curious about, or something in this post you think could be clearer or sharper? Drop your thoughts in the comments — I’m all ears. Let’s make this blog a two-way conversation.
 
-***Author: Phong (Felix) Do***
+***Author: Felix Do***

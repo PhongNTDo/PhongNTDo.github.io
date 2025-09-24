@@ -10,13 +10,12 @@ redirect_from:
 
 <!-- Welcome! I am an ***AI Researcher at Zalo AI & UIT@NLP*** at Ho Chi Minh city, Vietnam. I have been a researcher at [UIT@NLP lab](https://nlp.uit.edu.vn/home) during my undergraduate degree at [University of Information Technology](https://www.uit.edu.vn/). After receiving my bachelor's degree in computer science, I have continued to do part-time research at this lab until now. In parallel, I have worked as an AI researcher at [Zalo AI](https://zalo.ai/), Vietnam for 3+ years. -->
 
-Hello and welcome! I’m Phong Do — an AI researcher passionate about how machines understand language, and how that understanding connects with the world around us.
 
-My journey into AI began at the [NLP@UIT lab](https://nlp.uit.edu.vn/home) at [University of Information Technology](https://www.uit.edu.vn/) in Ho Chi Minh City, where I first explored Natural Language Processing as an undergraduate student. This early exposure laid the foundation for a lasting commitment: I’ve continued my research with the lab even after graduation. In parallel, I’ve worked at [Zalo AI](https://zalo.ai/) for over three years, focusing on both speech processing and NLP, with a particular emphasis on large language models. At Zalo, I contributed to the development of speech processing models for [Kiki Assistant](https://kiki.zalo.ai/), a Vietnamese virtual voice assistant installed in over 1 million cars, helping bring conversational AI into daily driving experiences.
+Hello and welcome! I’m Phong Do — a first-year PhD student at the [University of Warwick](https://warwick.ac.uk/), UK, supervised by [Dr. Gabriele Pergola](https://warwick.ac.uk/fac/sci/dcs/people/u1898418/). My research focuses on Retrieval-Augmented Generation (RAG) and Knowledge Graphs to advance document retrieval and improve NLP tasks such as question answering and machine reading comprehension.
 
-But beyond code and computation, there’s another part of me: the geographer at heart. I’ve always been captivated by the way places shape people, and how language reflects the landscapes we come from. This passion drives me to explore not only AI and Geography as separate disciplines, but also the rich, underexplored intersection between them — where spatial thinking can inform smarter, more human-centered AI.
+My journey into AI began at the [NLP@UIT](https://nlp.uit.edu.vn/home) lab at [University of Information Technology](https://www.uit.edu.vn/) in Ho Chi Minh City, where I specialized in question answering and machine reading comprehension as an undergraduate researcher. This early work laid the foundation for my long-term interest in building systems that can read, understand, and reason over text. After graduation, I continued my involvement with the lab and expanded my experience at [Zalo AI](https://zalo.ai/), where I spent over three years working on large language models and speech processing. At Zalo, I contributed to speech technologies for [Kiki Assistant](https://kiki.zalo.ai/), a Vietnamese virtual voice assistant installed in over one million cars, helping bring conversational AI into everyday life.
 
-Whether through research, writing, or collaboration, I’m on a path to build systems that understand more than just words — systems that understand context, culture, and connection.
+Beyond traditional NLP, I am also pursuing research in GeoAI — the intersection of geography and artificial intelligence. My interest lies in how spatial knowledge and geographic context can be modeled to improve information retrieval and reasoning, particularly in combination with RAG and Knowledge Graphs. By integrating linguistic and spatial perspectives, I aim to develop AI systems that not only understand language but also situate that understanding within the broader context of knowledge, culture, and place.
 
 
 Research Interests
@@ -39,6 +38,11 @@ I’m passionate about building intelligent retrieval systems that can reason, g
 
 ## 📰 News
 ------
+
+<details>
+  <summary><strong>🎉 June 25, 2025 — I will be starting my PhD at the University of Warwick!</strong></summary>
+  <p>I am thrilled to share that I have been awarded a fully-funded scholarship for the PhD in Computer Science program at the University of Warwick, UK. I will be starting this exciting journey in Fall 2025.</p>
+</details>
 
 <details>
   <summary><strong>📄 May 16, 2025 — A paper accepted to ACL 2025 (Main)</strong></summary>

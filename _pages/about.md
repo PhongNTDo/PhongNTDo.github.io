@@ -11,7 +11,7 @@ redirect_from:
 <!-- Welcome! I am an ***AI Researcher at Zalo AI & UIT@NLP*** at Ho Chi Minh city, Vietnam. I have been a researcher at [UIT@NLP lab](https://nlp.uit.edu.vn/home) during my undergraduate degree at [University of Information Technology](https://www.uit.edu.vn/). After receiving my bachelor's degree in computer science, I have continued to do part-time research at this lab until now. In parallel, I have worked as an AI researcher at [Zalo AI](https://zalo.ai/), Vietnam for 3+ years. -->
 
 
-Hello and welcome! I’m Phong Do — a first-year PhD student at the [University of Warwick](https://warwick.ac.uk/), UK, supervised by [Dr. Gabriele Pergola](https://warwick.ac.uk/fac/sci/dcs/people/u1898418/). My research focuses on Retrieval-Augmented Generation (RAG) and Knowledge Graphs to advance document retrieval and improve NLP tasks such as question answering and machine reading comprehension.
+Hello and welcome! I’m Phong Do — a first-year PhD student at the [University of Warwick](https://warwick.ac.uk/), UK, supervised by [Dr. Gabriele Pergola](https://warwick.ac.uk/fac/sci/dcs/people/u1898418/). My research focuses on prompt stability, prompt robustness, and security risks in LLM-based systems, with particular emphasis on indirect prompt injection (IPI) in retrieval-augmented and agent-based settings
 
 My journey into AI began at the [NLP@UIT](https://nlp.uit.edu.vn/home) lab at [University of Information Technology](https://www.uit.edu.vn/) in Ho Chi Minh City, where I specialized in question answering and machine reading comprehension as an undergraduate researcher. This early work laid the foundation for my long-term interest in building systems that can read, understand, and reason over text. After graduation, I continued my involvement with the lab and expanded my experience at [Zalo AI](https://zalo.ai/), where I spent over three years working on large language models and speech processing. At Zalo, I contributed to speech technologies for [Kiki Assistant](https://kiki.zalo.ai/), a Vietnamese virtual voice assistant installed in over one million cars, helping bring conversational AI into everyday life.
 
@@ -20,20 +20,23 @@ Beyond traditional NLP, I am also pursuing research in GeoAI — the intersectio
 
 Research Interests
 ======
-I’m passionate about building intelligent retrieval systems that can reason, generalize across modalities and languages, and interact with structured knowledge. My research focuses on two major directions: enhancing Retrieval-Augmented Generation (RAG), and exploring the intersection between Artificial Intelligence and Geography.
 
-- **🔍 Retrieval-Augmented Generation:** I'm interested in advancing RAG systems to make retrieval more intelligent, interpretable, and adaptable to complex data types.
+My research lies at the intersection of **large language models**, **retrieval**, and **AI safety**, with a focus on robustness, security, and structured reasoning.
 
-  - **📘 Knowledge Graph Reasoning:** Leveraging structured knowledge graphs to support logical reasoning and evidence chaining during retrieval.
+- **Prompt Stability & Prompt Robustness**  
+  Sensitivity analysis of prompts, instruction perturbations, evaluation of reliable instruction-following.
 
-  - **🌐 Multilingual & Multimodal Embedding:** Designing unified embedding spaces for cross-language and cross-modal semantic search - enabling systems to search across text, images, and more.
+- **Indirect Prompt Injection (IPI) Defense**  
+  Security of LLM agents, untrusted content handling, retrieval-time and execution-time defenses.
+
+- **Retrieval-Augmented Generation (RAG) & Question Answering**  
+  Document retrieval, evidence grounding, reasoning over retrieved context.
+
+- **GeoAI & Spatial Reasoning**  
+  Geographic knowledge graphs, spatial QA, geospatial retrieval and reasoning.
 
 
-- **🗺️ AI and Geography:** As a geography enthusiast, exploring the intersection between spatial intelligence and artificial intelligence.
-
-  - **🧭 Spatial RAG & Geographic Question Answering:** Developing systems that understand and retrieve geospatial information, enabling models to answer geography-based questions and reason over maps, locations, and spatial relationships.
-
-<span style="color:red">*I am happy to chat and discuss potential collaborations. Please feel free to reach out to me via Email (phongdntvn@gmail.com).*</span>
+<span style="color:red">*I am happy to chat and discuss potential collaborations. Please feel free to reach out to me via Email (phong.do@warwick.ac.uk).*</span>
 
 
 ## 📝 Latest Blogs

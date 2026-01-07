@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Indirect Prompt Injection in LLM Applications and Agents: Threat Models, Benchmarks, and Defense Mechanisms"
-date: 2025-12-27 22:00:00 +0000
+date: 2026-01-07 22:00:00 +0000
 comments: true
 tags: [Information Technology, GeoAI]
 ---

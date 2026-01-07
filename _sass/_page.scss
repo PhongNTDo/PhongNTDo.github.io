@@ -399,3 +399,36 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+/*
+   About page blog grid
+   ========================================================================== */
+
+.about-blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.about-blog-card {
+  padding: 1.25rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $body-color;
+  box-shadow: 0 1px 0 rgba(#000, 0.04);
+}
+
+.about-blog-title {
+  margin: 0 0 0.5rem;
+  font-size: $type-size-4;
+}
+
+.about-blog-excerpt {
+  margin: 0 0 0.75rem;
+}

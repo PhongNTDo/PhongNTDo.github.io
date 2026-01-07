@@ -13,9 +13,9 @@ Keywords:
 
 # 1. Introduction and motivation
 
-LLMs are increasingly deployed as integrated systems rather than standalone chatbots. This integration amplifies a core security tension: external content is essential for usefulness, yet it is not trustworthy be default. IPI captures the resulting failure mode when untrusted content is interpreted as actionable instruction rather than inert data.
+LLMs are increasingly deployed as integrated systems rather than standalone chatbots. This integration amplifies a core security tension: external content is essential for usefulness, yet it is not trustworthy by default. IPI captures the resulting failure mode when untrusted content is interpreted as actionable instruction rather than inert data.
 
-In response, the research community has begun ti standardize both evaluation and mitigation. On the evaluation side, BIPIA [[1]](#1) introduces a dedicated benchrmark for IP on LLM applications, while AgentDogo provides a dynamic environment for toll-using agents. On the mitigate side, the field has broadened from prompt-only countermeasures toward system and runtime approaches that constrain tool access and validate execution trajectories, reflecting an emerging consensus that IPI is often best addressed at the level of actions and control flow, not only text.
+In response, the research community has begun to standardize both evaluation and mitigation. On the evaluation side, BIPIA [[1]](#1) introduces a dedicated benchmark for IPI on LLM applications, while AgentDojo provides a dynamic environment for tool-using agents. On the mitigation side, the field has broadened from prompt-only countermeasures toward system and runtime approaches that constrain tool access and validate execution trajectories, reflecting an emerging consensus that IPI is often best addressed at the level of actions and control flow, not only text.
 
 # 2. Problem definition and a minimal system model
 ## 2.1 What is Indirect Prompt Injection?
@@ -28,7 +28,7 @@ A simple way to separate terms:
 
 We can describe most systems vulnerable to IPI using a simple diagram like the one below.
 ![flow_of_IPI_vulnerable_systems](/images/blogs/Indirect_Prompt_Injection_in_LLM_Applications_and_Agents/flow_of_IPI_vulnerable_systems.png)
-*Fig 1. The flow of IPI vulnerable systems.*
+*Figure 1. The flow of IPI vulnerable systems.*
 
 ## 2.2 What counts as "success" for an attacker
 At a high level, IPI attempts to cause one (or more) of the following deviations:
@@ -75,7 +75,7 @@ The IPI literature is increasingly benchmark-driven: papers are typically compar
 - Representative benchmark: **AgentDojo** [[2]](#2) (97 realistic tasks + 629 security test cases).
 
 ![Two benchmark families](/images/blogs/Indirect_Prompt_Injection_in_LLM_Applications_and_Agents/Two_benchmark_families.png)
-*Fig 2. Two common benchmark families.*
+*Figure 2. Two common benchmark families.*
 
 ## Common metrics
 Most benchmark results can be interpreted with two numbers:
@@ -84,7 +84,7 @@ Most benchmark results can be interpreted with two numbers:
 
 # 5. Defense landscape
 
-IPI defenses can be understood by where they intervene in the minimal system model: at the text level (what the LLM reads), at the decision level (what the LLM propose), or at the execution level (what the system actually does). The recent trend-especially for tool agents - is a shift from "prompt only" mitigations toward system and execution constraints.
+IPI defenses can be understood by where they intervene in the minimal system model: at the text level (what the LLM reads), at the decision level (what the LLM proposes), or at the execution level (what the system actually does). The recent trend, especially for tool agents, is a shift from "promp-only" mitigations toward system and execution constraints.
 
 ## 5.1 Defense families
 
@@ -115,40 +115,41 @@ IPI defenses can be understood by where they intervene in the minimal system mod
 - *Idea*: separate planning from acting; isolate memory streams; add validators to detect drift induced by untrusted content.
 - Representative: DRIFT (Dynamic Rule-based Defense with Injection Isolation).
 ![the_flow_of_DRIFT](/images/blogs/Indirect_Prompt_Injection_in_LLM_Applications_and_Agents/the_workflow_of_DRIFT.png)
+
 *Figure 6. The workflow of DRIFT.*
 
 # 6. Current status and key takeaways
 
-If you only remember a few things about IPI defenses, remeber these.
+If you only remember a few things about IPI defenses, remember these.
 
 ## 6.1. The field's direction
-- From prompt-only -> system/runtime controls: Early work emphasized prompt'level boundary cues; recent agent-focused defenses increasingly constrain actions and trajectories (tool gating, validation, structured execution).
+- From prompt-only -> system/runtime controls: Early work emphasized prompt-level boundary cues; recent agent-focused defenses increasingly constrain actions and trajectories (tool gating, validation, structured execution).
 - Agents change the evaluation target: For tool-using agents, security is not just about incorrect text but also unsafe tool calls and multi-step drift, which is why AgentDojo evaluation became central.
-- Security is always with utility: Defenses that reduce ASR but heavily reduce clean tasks success are rarely acceptable in practice; modern papers increasingly report both axes.
-- Structured representations are rising: Several methods represent allowable behavior explicitly (tool dependecy graphs, trace-as-program constraints) to make enforcement and verification more concrete than "hope the model obeys".
+- Security is always coupled with utility: Defenses that reduce ASR but heavily reduce clean task success are rarely acceptable in practice; modern papers increasingly report both axes.
+- Structured representations are rising: Several methods represent allowable behavior explicitly (tool dependency graphs, trace-as-program constraints) to make enforcement and verification more concrete than "hope the model obeys".
 
 The landscape becomes easiest to remember when we map defenses by (i) whether the system is a single-step app or a multi-step tool agent, and (ii) whether the defense acts on text or on execution.
 ![which_ipi_defenses_fit_which_systems](/images/blogs/Indirect_Prompt_Injection_in_LLM_Applications_and_Agents/which_ipi_defenses_fit_which_systems.png)
-*Figure 7. A 2x2 map of IPI defenses type and control layer.*
+*Figure 7. A 2x2 map of IPI defenses by system type and control layer.*
 
 ## 6.2. The recurring tradeoffs
-- False positive vs security: detectors/sanitizers can over-block begnign content, directly hurting utility.
-- Coverage vs complexity: stronger agent controls require more orchestration (tool APIs, logs, validators, runtome hooks).
+- False positives vs security: detectors/sanitizers can over-block benign content, directly hurting utility.
+- Coverage vs complexity: stronger agent controls require more orchestration (tool APIs, logs, validators,runtime hooks).
 - Benchmark transfer: good performance on a benchmark does not automatically guarantee robustness across different agent frameworks, tools, or content distributions.
 
 # 7. Open problems and where to go next
 Even with strong recent progress, IPI is not “solved.” The most useful way to frame the current status is as a set of open evaluation and engineering questions:
 
 - Results can vary significantly across agent frameworks, tool interfaces, and model families; benchmark wins may not transfer cleanly to new stacks.
-- Many practical agents keep notes, plans, or summarizes; once contaminated, injections can persist beyond a single step. Memory isolation is increasingly proposed, but evaluation of long-horizon persistence remains limited.
-- Detection/sanitization can reduce attacks but may block benign content, leading to refusal or degreaded task performance.
-- For tool-using agents, the real question is not only "did the answer change", but "did the agent take unjustified actions across a trajectory. This motivates execution-centric defenses, but also makes evaluation more complex.
+- Many practical agents keep notes, plans, or summaries; once contaminated, injections can persist beyond a single step. Memory isolation is increasingly proposed, but evaluation of long-horizon persistence remains limited.
+- Detection/sanitization can reduce attacks but may block benign content, leading to refusal or degraded task performance.
+- For tool-using agents, the real question is not only "did the answer change", but "did the agent take unjustified actions across a trajectory?". This motivates execution-centric defenses, but also makes evaluation more complex.
 
 IPI is best understood as a systems problem: untrusted content enters the reasoning loop and competes with intended instructions. Benchmarks like BIPIA and AgentDojo have helped standardize evaluation, and the clearest trend is toward defenses that constrain execution—not only prompts.
 
 ***Notice on figures and AI assistance.***
 
-*Some figures in this post are reproduced or adapted from the original papers cited throughout the text; the source paper is indicated in the corresponding figure caption. Additional diagrams were generated using Nano Banana based on author-provided specifications. Parts of the writing (e.g., summarization, phrasing, and organization) were AI-assisted; readers should rely on the cited papers for definitive technical details and results.*
+*Some figures in this post are reproduced or adapted from the original papers cited throughout the text; the source paper is indicated in the corresponding figure caption. Additional diagrams were generated using Nano Banana (Google) based on author-provided specifications. Parts of the writing (e.g., summarization, phrasing, and organization) were AI-assisted; readers should rely on the cited papers for definitive technical details and results.*
 
 # References
 <a id="1">[1]</a>

@@ -36,6 +36,22 @@ I’m passionate about building intelligent retrieval systems that can reason, g
 <span style="color:red">*I am happy to chat and discuss potential collaborations. Please feel free to reach out to me via Email (phongdntvn@gmail.com).*</span>
 
 
+## 📝 Latest Blogs
+------
+
+Here are a few recent posts you might enjoy.
+
+<div class="about-blog-grid">
+  {% for post in site.posts limit:4 %}
+    <article class="about-blog-card">
+      <h3 class="about-blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="about-blog-excerpt">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 28 }}</p>
+      <a class="about-blog-link" href="{{ post.url | relative_url }}">Read the full post</a>
+    </article>
+  {% endfor %}
+</div>
+
+
 ## 📰 News
 ------
 

@@ -270,7 +270,27 @@ The map is not meant to be a strict taxonomy. Many papers could belong to more t
 
 > **LLM agents are evolving from fixed prompted loops into adaptive workflow systems.**
 
-# 9. Key Tensions and Open Questions
+# 9. A Compact Taxonomy of LLM Agent Workflows
+
+The landscape above can be summarized as a compact taxonomy. Instead of classifying papers only by year or task, we can classify them by the **main workflow question** they address.
+
+| Layer | Main question | Representative methods |
+|---|---|---|
+| **Control pattern** | How should one agent reason, act, observe, or reflect? | ReAct, ReWOO, Reflexion |
+| **Programmable workflow** | How can LM pipelines be represented and optimized as programs? | DSPy |
+| **Multi-agent collaboration** | How should multiple agents or models communicate and aggregate outputs? | Mixture-of-Agents, GPTSwarm |
+| **Workflow search** | Can better agentic workflows be generated, searched, scored, or refined automatically? | ADAS, AFlow, ScoreFlow, A2Flow |
+| **Adaptive orchestration** | Can the system choose different workflows, models, or budgets for different queries? | MaAS, DAAO |
+
+This taxonomy is not meant to be final. Some methods naturally belong to more than one layer. However, it gives a useful way to read the field: each layer changes the unit of design.
+
+The progression is:
+
+> **prompt → control loop → programmable workflow → multi-agent structure → searched workflow → adaptive orchestration**
+
+This is the core of the workflow turn in LLM agents.
+
+# 10. Key Tensions and Open Questions
 
 Looking across the landscape, the papers are not only proposing different methods. They are also exposing several deeper tensions in how LLM agent systems should be built.
 
@@ -307,7 +327,7 @@ A few open questions seem especially important:
 
 These questions point to the same conclusion: workflow engineering is not just about creating larger or more complicated agent systems. It is about finding the right structure for the right problem under the right constraints.
 
-# 10. Conclusion: From Prompt Engineering to Workflow Engineering
+# 11. Conclusion: From Prompt Engineering to Workflow Engineering
 
 The main story behind these papers is not simply that LLM agents are getting more complex. It is that the **unit of design is changing**.
 
@@ -329,5 +349,18 @@ and more on asking:
 
 That is the workflow turn in LLM agents.
 
+# How to Cite This Post
+
+If you find this survey useful, you can cite or reference it as:
+
+```bibtex
+@misc{do2026workflowturn,
+  title        = {From ReAct to AFlow: The Workflow Turn in LLM Agents},
+  author       = {Phong Do},
+  year         = {2026},
+  howpublished = {\url{https://phongntdo.github.io/From-ReAct-to-AFlow-The-Workflow-Turn-in-LLM-Agents}},
+  note         = {Blog post}
+}
+```
 
 ***Author: Felix Do***

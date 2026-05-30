@@ -34,7 +34,6 @@ My research interests
 
 
 ## 📝 Latest Blogs
-======
 
 
 <div class="about-blog-grid">
@@ -46,21 +45,30 @@ My research interests
 </div>
 
 
-## 📰 News
-======
+## News
 
+<div class="news-timeline">
+  <article class="news-item">
+    <time class="news-date" datetime="2025-10">October 2025</time>
+    <div class="news-content">
+      <h3>Started my PhD at the University of Warwick</h3>
+      <p>I began my fully funded PhD in Computer Science at the University of Warwick, UK, supervised by <a href="https://warwick.ac.uk/fac/sci/dcs/people/u1898418/">Dr. Gabriele Pergola</a>.</p>
+    </div>
+  </article>
 
-<details>
-  <summary><strong>🎉 June 25, 2025 — I will be starting my PhD at the University of Warwick!</strong></summary>
-  <p>I am thrilled to share that I have been awarded a fully-funded scholarship for the PhD in Computer Science program at the University of Warwick, UK. I will be starting this exciting journey in Fall 2025.</p>
-</details>
+  <article class="news-item">
+    <time class="news-date" datetime="2025-05-16">May 16, 2025</time>
+    <div class="news-content">
+      <h3>Paper accepted to ACL 2025 Main</h3>
+      <p>Our paper at Zalo, <em>VMLU Benchmarks: A comprehensive benchmark toolkit for Vietnamese LLMs</em>, was accepted to <strong>ACL 2025</strong>.</p>
+    </div>
+  </article>
 
-<details>
-  <summary><strong>📄 May 16, 2025 — A paper accepted to ACL 2025 (Main)</strong></summary>
-  <p>Our new paper at Zalo with the title <em>"VMLU Benchmarks: A comprehensive benchmark toolkit for Vietnamese LLMs"</em> has been accepted at <strong>ACL 2025</strong>.</p>
-</details>
-
-<details>
-  <summary><strong>📄 June 19, 2024 — My paper published at NAACL 2024 (Findings)</strong></summary>
-  <p>Our new paper at the UIT NLP Group with the title <em>"VLUE: A New Benchmark and Multi-task Knowledge Transfer Learning for Vietnamese Natural Language Understanding"</em> has been published at <strong>NAACL 2024</strong>.</p>
-</details>
+  <article class="news-item">
+    <time class="news-date" datetime="2024-06-19">June 19, 2024</time>
+    <div class="news-content">
+      <h3>Paper published at NAACL 2024 Findings</h3>
+      <p>Our paper with the UIT NLP Group, <em>VLUE: A New Benchmark and Multi-task Knowledge Transfer Learning for Vietnamese Natural Language Understanding</em>, was published at <strong>NAACL 2024 Findings</strong>.</p>
+    </div>
+  </article>
+</div>

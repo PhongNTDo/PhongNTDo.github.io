@@ -472,6 +472,84 @@
 
 
 /*
+   About page news timeline
+   ========================================================================== */
+
+.news-timeline {
+  position: relative;
+  max-width: 48rem;
+  margin-top: 1.25rem;
+  padding-left: 1.35rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.35rem;
+    bottom: 0.35rem;
+    left: 0.25rem;
+    width: 2px;
+    background: linear-gradient(180deg, rgba($info-color, 0.75), $border-color);
+  }
+}
+
+.news-item {
+  position: relative;
+  display: grid;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    left: -1.33rem;
+    width: 0.65rem;
+    height: 0.65rem;
+    border: 3px solid $body-color;
+    border-radius: 50%;
+    background: $info-color;
+    box-shadow: 0 0 0 2px rgba($info-color, 0.25);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($medium) {
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+.news-date {
+  color: mix(#fff, $text-color, 25%);
+  font-size: $type-size-6;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.news-content {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $border-color;
+
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1em;
+    line-height: 1.35;
+  }
+
+  p {
+    margin: 0;
+    color: mix(#fff, $text-color, 12%);
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+}
+
+
+/*
    Experience timeline
    ========================================================================== */
 
@@ -616,5 +694,160 @@
 
   p {
     margin: 0;
+  }
+}
+
+
+/*
+   Publications page
+   ========================================================================== */
+
+.publications-page,
+.blog-page {
+  max-width: 54rem;
+}
+
+.publications-intro,
+.blog-intro {
+  max-width: 44rem;
+  margin: 0 0 1rem;
+  color: mix(#fff, $text-color, 14%);
+  font-size: $type-size-5;
+  line-height: 1.6;
+}
+
+.publications-actions {
+  margin: 0 0 1.5rem;
+}
+
+.publication-section {
+  margin-top: 2rem;
+}
+
+.publication-section-title {
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid $border-color;
+  font-size: 1.2em;
+}
+
+.publication-list,
+.blog-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.publication-card,
+.blog-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  background: $body-color;
+  box-shadow: 0 8px 20px rgba(#000, 0.05);
+}
+
+.publication-card-meta,
+.blog-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.55rem;
+  color: mix(#fff, $text-color, 24%);
+  font-size: $type-size-6;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  span,
+  time {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.publication-card-title,
+.blog-card-title {
+  margin: 0 0 0.55rem;
+  font-size: 1.08em;
+  line-height: 1.35;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $link-color-hover;
+      text-decoration: underline;
+    }
+  }
+}
+
+.publication-card-excerpt,
+.blog-card-excerpt {
+  margin: 0;
+  color: mix(#fff, $text-color, 12%);
+  font-size: 0.94em;
+  line-height: 1.6;
+
+  p {
+    margin: 0;
+  }
+}
+
+.publication-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.28rem 0.55rem;
+    border: 1px solid rgba($info-color, 0.35);
+    border-radius: 999px;
+    color: mix(#000, $info-color, 20%);
+    font-size: $type-size-6;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-color: rgba($info-color, 0.65);
+      color: $link-color-hover;
+      background: rgba($info-color, 0.08);
+      text-decoration: none;
+    }
+  }
+}
+
+
+/*
+   Blog page
+   ========================================================================== */
+
+.blog-card-tags {
+  gap: 0.35rem;
+
+  span {
+    padding: 0.12rem 0.4rem;
+    border-radius: 999px;
+    background: rgba($primary-color, 0.1);
+  }
+}
+
+.blog-card-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }

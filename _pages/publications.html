@@ -5,31 +5,87 @@ permalink: /publications/
 author_profile: true
 ---
 
-<div class="publications-list">
+{% include base_path %}
+
+{% assign publications = site.publications | sort: "date" | reverse %}
+
+<div class="publications-page">
+  <p class="publications-intro">
+    My publications focus on Vietnamese NLP, machine reading comprehension, question answering, language benchmarks, and the evaluation of language models.
+  </p>
+
   {% if site.author.googlescholar %}
-    <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+    <p class="publications-actions">
+      <a class="btn btn--primary" href="{{ site.author.googlescholar }}">Google Scholar</a>
+    </p>
   {% endif %}
 
-  {% include base_path %}
-
-  <!-- New style rendering if publication categories are defined -->
   {% if site.publication_category %}
-    {% for category in site.publication_category  %}
+    {% for category in site.publication_category %}
+      {% assign category_key = category[0] %}
       {% assign title_shown = false %}
-      {% for post in site.publications reversed %}
-        {% if post.category != category[0] %}
+      {% for post in publications %}
+        {% if post.category != category_key %}
           {% continue %}
         {% endif %}
         {% unless title_shown %}
-          <h2>{{ category[1].title }}</h2><hr />
+          <section class="publication-section">
+            <h2 class="publication-section-title">{{ category[1].title }}</h2>
+          <div class="publication-list">
           {% assign title_shown = true %}
         {% endunless %}
-        {% include archive-single.html %}
+
+        <article class="publication-card">
+          <div class="publication-card-meta">
+            <span>{{ post.date | date: "%Y" }}</span>
+            <span>{{ category[1].title }}</span>
+          </div>
+          <h3 class="publication-card-title">
+            <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          {% if post.excerpt %}
+            <div class="publication-card-excerpt">
+              {{ post.excerpt | markdownify }}
+            </div>
+          {% endif %}
+          <div class="publication-card-links">
+            <a href="{{ base_path }}{{ post.url }}">Details</a>
+            {% if post.paperurl %}
+              <a href="{{ post.paperurl }}">Paper</a>
+            {% endif %}
+          </div>
+        </article>
       {% endfor %}
+      {% if title_shown %}
+          </div>
+          </section>
+      {% endif %}
     {% endfor %}
   {% else %}
-    {% for post in site.publications reversed %}
-      {% include archive-single.html %}
-    {% endfor %}
+    <section class="publication-section">
+      <div class="publication-list">
+        {% for post in publications %}
+          <article class="publication-card">
+            <div class="publication-card-meta">
+              <span>{{ post.date | date: "%Y" }}</span>
+            </div>
+            <h3 class="publication-card-title">
+              <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            {% if post.excerpt %}
+              <div class="publication-card-excerpt">
+                {{ post.excerpt | markdownify }}
+              </div>
+            {% endif %}
+            <div class="publication-card-links">
+              <a href="{{ base_path }}{{ post.url }}">Details</a>
+              {% if post.paperurl %}
+                <a href="{{ post.paperurl }}">Paper</a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
   {% endif %}
 </div>

@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Phong (Felix) Do"
 title_separator          : "-"
 name                     : &name "Phong (Felix) Do"
-description              : &description "AI Researcher"
+description              : &description "PhD Student in Computer Science"
 url                      : https://PhongNTDo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "PhongNTDo/PhongNTDo.github.io"
@@ -24,12 +24,12 @@ author:
   avatar           : "profile.jpg"
   name             : "Phong (Felix) Do"
   pronouns         : # example: "she/her"  
-  bio              : "AI Researcher | Geography Enthusiast | Storyteller in Code and Coordinates"
-  describe         : "Where language meets landscape"
-  location         : "Ho Chi Minh city, Vietnam"
-  employer         : "Zalo AI & UIT@NLP Lab"
+  bio              : "PhD Student in Computer Science"
+  describe         : "Research: LLM workflows, robustness, retrieval, AI safety"
+  location         : "Coventry, UK"
+  employer         : "University of Warwick, UK"
   # uri              : # URL
-  email            : "phongdntvn@gmail.com" 
+  email            : "phong.do@warwick.ac.uk" 
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile

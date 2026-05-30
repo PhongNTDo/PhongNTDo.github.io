@@ -10,30 +10,24 @@ redirect_from:
 
 <!-- Welcome! I am an ***AI Researcher at Zalo AI & UIT@NLP*** at Ho Chi Minh city, Vietnam. I have been a researcher at [UIT@NLP lab](https://nlp.uit.edu.vn/home) during my undergraduate degree at [University of Information Technology](https://www.uit.edu.vn/). After receiving my bachelor's degree in computer science, I have continued to do part-time research at this lab until now. In parallel, I have worked as an AI researcher at [Zalo AI](https://zalo.ai/), Vietnam for 3+ years. -->
 
+Hi, I am Phong Do, a first-year PhD student in Computer Science at the [University of Warwick](https://warwick.ac.uk/), supervised by [Dr. Gabriele Pergola](https://warwick.ac.uk/fac/sci/dcs/people/u1898418/).
 
-Hello and welcome! I’m Phong Do — a first-year PhD student at the [University of Warwick](https://warwick.ac.uk/), UK, supervised by [Dr. Gabriele Pergola](https://warwick.ac.uk/fac/sci/dcs/people/u1898418/). My research focuses on prompt stability, prompt robustness, and security risks in LLM-based systems, with particular emphasis on indirect prompt injection (IPI) in retrieval-augmented and agent-based settings
+My research focuses on building more reliable, robust, and adaptive LLM-based systems. I am especially interested in how large language models reason, retrieve evidence, follow instructions, and execute workflows in complex settings such as retrieval-augmented generation and agent-based systems.
 
-My journey into AI began at the [NLP@UIT](https://nlp.uit.edu.vn/home) lab at [University of Information Technology](https://www.uit.edu.vn/) in Ho Chi Minh City, where I specialized in question answering and machine reading comprehension as an undergraduate researcher. This early work laid the foundation for my long-term interest in building systems that can read, understand, and reason over text. After graduation, I continued my involvement with the lab and expanded my experience at [Zalo AI](https://zalo.ai/), where I spent over three years working on large language models and speech processing. At Zalo, I contributed to speech technologies for [Kiki Assistant](https://kiki.zalo.ai/), a Vietnamese virtual voice assistant installed in over one million cars, helping bring conversational AI into everyday life.
+Recently, my work has been moving toward LLM workflow engineering: how to represent, analyze, optimize, and adapt the reasoning structure of LLM systems. Instead of treating an LLM system as only one prompt and one answer, I am interested in the full workflow: planning, retrieval, tool use, model calls, verification, aggregation, and final response generation.
 
-Beyond traditional NLP, I am also pursuing research in GeoAI — the intersection of geography and artificial intelligence. My interest lies in how spatial knowledge and geographic context can be modeled to improve information retrieval and reasoning, particularly in combination with RAG and Knowledge Graphs. By integrating linguistic and spatial perspectives, I aim to develop AI systems that not only understand language but also situate that understanding within the broader context of knowledge, culture, and place.
+Before starting my PhD, I worked as an AI Engineer at [Zalo AI](https://zalo.ai/), where I contributed to language and speech technologies for real-world Vietnamese AI applications. I also worked with the [UIT NLP Group](https://nlp.uit.edu.vn/home), where my research focused on Vietnamese NLP, machine reading comprehension, question answering, and language models.
 
-
-Research Interests
+My research interests
 ======
 
-My research lies at the intersection of **large language models**, **retrieval**, and **AI safety**, with a focus on robustness, security, and structured reasoning.
-
-- **Prompt Stability & Prompt Robustness**  
-  Sensitivity analysis of prompts, instruction perturbations, evaluation of reliable instruction-following.
-
-- **Indirect Prompt Injection (IPI) Defense**  
-  Security of LLM agents, untrusted content handling, retrieval-time and execution-time defenses.
-
-- **Retrieval-Augmented Generation (RAG) & Question Answering**  
-  Document retrieval, evidence grounding, reasoning over retrieved context.
-
-- **GeoAI & Spatial Reasoning**  
-  Geographic knowledge graphs, spatial QA, geospatial retrieval and reasoning.
+- LLM workflows and agentic systems
+- Prompt robustness and prompt stability
+- Retrieval-augmented generation
+- Indirect prompt injection and LLM security
+- Question answering and machine reading comprehension
+- Multilingual NLP, especially Vietnamese NLP
+- Knowledge graphs and structured reasoning
 
 
 <span style="color:red">*I am happy to chat and discuss potential collaborations. Please feel free to reach out to me via Email (phong.do@warwick.ac.uk).*</span>
@@ -42,15 +36,11 @@ My research lies at the intersection of **large language models**, **retrieval**
 ## 📝 Latest Blogs
 ------
 
-Here are a few recent posts you might enjoy.
-
 <div class="about-blog-grid">
   {% for post in site.posts limit:4 %}
-    <article class="about-blog-card">
-      <h3 class="about-blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="about-blog-excerpt">{{ post.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 28 }}</p>
-      <a class="about-blog-link" href="{{ post.url | relative_url }}">Read the full post</a>
-    </article>
+    <a class="about-blog-card" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">
+      <span class="about-blog-title">{{ post.title }}</span>
+    </a>
   {% endfor %}
 </div>
 

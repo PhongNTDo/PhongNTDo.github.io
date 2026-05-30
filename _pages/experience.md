@@ -7,83 +7,27 @@ author_profile: true
 
 {% include base_path %}
 
-<div id="experience-timeline">
+<p class="experience-summary">
+  A chronological view of my work across doctoral research, applied AI engineering, and NLP research.
+</p>
+
+<div class="experience-timeline">
   {% for experience in site.data.experience %}
-    <div class="experience-item">
-      <div class="experience-date">{{ experience.date }}</div>
-      <div class="experience-content">
-        <h3>{{ experience.title }}</h3>
-        <h4>{{ experience.company }}</h4>
-        {% if experience.supervisor %}
-          <p>Supervisor: {{ experience.supervisor }}</p>
+    <article class="experience-entry{% if experience.status == 'current' %} experience-entry--current{% endif %}">
+      <div class="experience-period">{{ experience.date }}</div>
+      <div class="experience-card">
+        {% if experience.status == "current" %}
+          <span class="experience-badge">Current</span>
         {% endif %}
-        <p>{{ experience.description }}</p>
+        <h2 class="experience-title">{{ experience.title }}</h2>
+        <p class="experience-company">{{ experience.company }}</p>
+        {% if experience.supervisor %}
+          <p class="experience-supervisor"><strong>Supervisor:</strong> {{ experience.supervisor }}</p>
+        {% endif %}
+        <div class="experience-description">
+          {{ experience.description | markdownify }}
+        </div>
       </div>
-    </div>
+    </article>
   {% endfor %}
 </div>
-
-<style>
-  #experience-timeline {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
-    margin-left: 25%; /* Add a left margin to push the timeline away from the sidebar */
-  }
-
-  .experience-item {
-    position: relative;
-    margin-bottom: 30px;
-    padding-left: 40px;
-  }
-
-  .experience-item:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 100%;
-    background-color: #ddd; /* Timeline line color */
-    z-index: 1;
-  }
-
-  .experience-item:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #fff; /* Circle color */
-    border: 3px solid #007bff; /* Circle border color */
-    z-index: 2;
-  }
-
-  .experience-date {
-    position: absolute;
-    top: 0;
-    left: -120px;
-    width: 100px;
-    text-align: right;
-    font-weight: bold;
-  }
-
-  .experience-content {
-    background-color: #f8f8f8; /* Content box color */
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  /* Media query for smaller screens */
-  @media (max-width: 768px) {
-    #experience-timeline {
-      margin-left: 0; /* Remove the left margin on smaller screens */
-    }
-    .experience-date {
-        left: -100px;
-    }
-  }
-</style>

@@ -469,3 +469,152 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
 }
+
+
+/*
+   Experience timeline
+   ========================================================================== */
+
+.experience-summary {
+  max-width: 42rem;
+  margin: 0 0 1.5rem;
+  color: mix(#fff, $text-color, 18%);
+  font-size: $type-size-5;
+  line-height: 1.6;
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 48rem;
+  margin-top: 1.75rem;
+  padding-left: 1.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.35rem;
+    width: 2px;
+    background: linear-gradient(180deg, rgba($info-color, 0.8), $border-color);
+  }
+
+  @include breakpoint($medium) {
+    padding-left: 0;
+
+    &::before {
+      left: 8.66rem;
+    }
+  }
+}
+
+.experience-entry {
+  position: relative;
+  margin-bottom: 1.25rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.45rem;
+    left: -1.49rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 3px solid $body-color;
+    border-radius: 50%;
+    background: $primary-color;
+    box-shadow: 0 0 0 2px $border-color;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($medium) {
+    display: grid;
+    grid-template-columns: 7.5rem minmax(0, 1fr);
+    column-gap: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    &::before {
+      left: 8.26rem;
+    }
+  }
+}
+
+.experience-entry--current {
+  &::before {
+    background: $info-color;
+    box-shadow: 0 0 0 2px rgba($info-color, 0.35);
+  }
+
+  .experience-card {
+    border-color: rgba($info-color, 0.45);
+    background: linear-gradient(135deg, rgba($info-color, 0.12), rgba($success-color, 0.08)), $body-color;
+  }
+}
+
+.experience-period {
+  margin-bottom: 0.45rem;
+  color: mix(#fff, $text-color, 25%);
+  font-size: $type-size-6;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  @include breakpoint($medium) {
+    padding-top: 0.15rem;
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+
+.experience-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  background: $body-color;
+  box-shadow: 0 8px 20px rgba(#000, 0.06);
+}
+
+.experience-badge {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  color: mix(#000, $info-color, 35%);
+  background: rgba($info-color, 0.16);
+  font-size: $type-size-7;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.experience-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.08em;
+  line-height: 1.3;
+}
+
+.experience-company {
+  margin: 0 0 0.65rem;
+  color: mix(#fff, $text-color, 14%);
+  font-weight: 700;
+}
+
+.experience-supervisor {
+  margin: 0 0 0.65rem;
+  color: mix(#fff, $text-color, 18%);
+  font-size: 0.9em;
+}
+
+.experience-description {
+  color: $text-color;
+  font-size: 0.95em;
+  line-height: 1.6;
+
+  p {
+    margin: 0;
+  }
+}

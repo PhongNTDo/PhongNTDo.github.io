@@ -1,13 +1,21 @@
 # _data/experience.yaml
-- date: "2022 - Present"
+- date: "October 2025 - Present"
+  title: "PhD Student in Computer Science"
+  company: "University of Warwick, UK"
+  status: "current"
+  description: >-
+    I am working on reliable and adaptive LLM-based systems, with a focus on LLM workflows, agentic reasoning, retrieval-augmented generation, and robustness.
+    My current research studies how LLM workflows can be represented, analyzed, routed, and optimized under real-world constraints such as cost, uncertainty, and noisy external information.
+
+- date: "2022 - September 2025"
   title: "AI Engineer"
   company: "Zalo AI"
   supervisor: "Mr. Trang Truong"
   description: >-
     Developing and deploying speech processing models, including Voice Activity Detection (VAD) and Automatic Speech Recognition (ASR), for real-world applications.
-    Contributing to the development of Kiki Assistant by integrating and optimizing these models.
+    Contributed to the development of Kiki Assistant by integrating and optimizing these models.
 
-- date: "2022 - Present"
+- date: "2022 - September 2025"
   title: "Research Assistant"
   company: "UIT Natural Language Processing Group"
   supervisor: "Dr. Kiet Van Nguyen & Prof. Ngan Luu-Thuy Nguyen"

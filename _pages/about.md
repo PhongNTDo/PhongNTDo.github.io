@@ -34,7 +34,8 @@ My research interests
 
 
 ## 📝 Latest Blogs
-------
+======
+
 
 <div class="about-blog-grid">
   {% for post in site.posts limit:4 %}
@@ -46,7 +47,8 @@ My research interests
 
 
 ## 📰 News
-------
+======
+
 
 <details>
   <summary><strong>🎉 June 25, 2025 — I will be starting my PhD at the University of Warwick!</strong></summary>
